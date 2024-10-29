@@ -341,7 +341,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__middle {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
@@ -366,7 +366,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items:  flex-start;
   column-gap: 2rem;
 }
 

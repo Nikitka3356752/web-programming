@@ -342,7 +342,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__middle {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .what_is_chatgpt_section .what_is_chatgpt_section__middle .middle__header {
@@ -367,7 +367,7 @@ p {
 .what_is_chatgpt_section .what_is_chatgpt_section__bottom {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   column-gap: 2rem;
 }
 
@@ -640,7 +640,6 @@ p {
   background-color: #031B34;
   width: 100%;
   padding: 3rem;
-  margin-left: auto;
   margin-bottom: 0;
   color: #fff;
   top: 0;
@@ -648,7 +647,9 @@ p {
   z-index: 10;
   padding-bottom: 0;
 }
-
+.footer p{
+  margin-top: 20px;
+}
 
 
 .cta-footer {
@@ -735,9 +736,6 @@ p {
   background-color: #040C18;
   size: 12px;
 }
-
-
-
 
 @media screen and (max-width: 766px) {
   p {
