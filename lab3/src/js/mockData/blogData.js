@@ -1,40 +1,42 @@
-// blogData.js
-
-export const blogPosts = [
+const blogData = {
+  header: "Многое происходит, мы ведем об этом блог",
+  mainArticle: {
+    date: "Сент 26, 2021",
+    title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
+    imgSrc: "./assets/img/ai-photo/voronka.png",
+    link: "#",
+    moreInfo: "Читать далее",
+  },
+  articlesMini: [
     {
       date: "Сент 26, 2021",
-      title: "GPT-3 и OpenAI: это будущее!",
-      imgSrc: "./assets/img/ai-photo/voronka.png",
-      link: "#",
-      isLarge: true
-    },
-    {
-      date: "Сент 26, 2021",
-      title: "Как GPT-3 меняет наш мир.",
+      title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
       imgSrc: "./assets/img/ai-photo/face.png",
       link: "#",
-      isLarge: false
+      moreInfo: "Читать далее",
     },
     {
-      date: "Сент 27, 2021",
-      title: "Будущее технологий: GPT-3.",
+      date: "Сент 26, 2021",
+      title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
       imgSrc: "./assets/img/ai-photo/table.png",
       link: "#",
-      isLarge: false
+      moreInfo: "Читать далее",
     },
     {
-      date: "Сент 28, 2021",
-      title: "Инновации в искусственном интеллекте.",
+      date: "Сент 26, 2021",
+      title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
       imgSrc: "./assets/img/ai-photo/chain.png",
       link: "#",
-      isLarge: false
+      moreInfo: "Читать далее",
     },
     {
-      date: "Сент 29, 2021",
-      title: "Этика искусственного интеллекта.",
+      date: "Сент 26, 2021",
+      title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
       imgSrc: "./assets/img/ai-photo/danger.png",
       link: "#",
-      isLarge: false
+      moreInfo: "Читать далее",
     }
-  ];
-  
+  ]
+};
+
+export default blogData;
