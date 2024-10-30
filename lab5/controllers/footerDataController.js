@@ -24,7 +24,7 @@ const postFooterData = (req, res, next) => {
 
     postFooterDataModel(data);
     res.status(200).json({
-      message: "Данные футера успешно обновлены",
+      message: "Данные footer успешно обновлены",
     });
   } catch (error) {
     res.status(400).json({

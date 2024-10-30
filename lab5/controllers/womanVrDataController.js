@@ -1,9 +1,5 @@
 const isWomanVrDataValid = require("../validators/isWomanVrDataValid");
-
-const { 
-    getWomanVrDataModel, 
-    postWomanVrDataModel 
-    } = require("../model/files/womanVrDataModel");
+const { getWomanVrDataModel, postWomanVrDataModel } = require("../model/files/womanVrDataModel");
 
 const getWomanVrData = (req, res, next) => {
   try {
@@ -19,13 +15,13 @@ const getWomanVrData = (req, res, next) => {
 const postWomanVrData = (req, res, next) => {
   try {
     const data = req.body;
+    console.log("Полученные данные:", data); // Добавляем лог для отладки
 
+    isWomanVrDataValid(data); // Проверяем данные
 
-    isWomanVrDataValid(data);
-
-    postWomanVrDataModel(data);
+    postWomanVrDataModel(data); // Записываем данные
     res.status(200).json({
-      message: "Данные успешно обновлены",
+      message: "Данные woman-vr успешно обновлены",
     });
   } catch (error) {
     res.status(400).json({

@@ -9,13 +9,13 @@ const getWomanVrDataModel = () => {
     return JSON.parse(file);
   } catch (error) {
     console.log(error);
-    throw new Error("Не удалось прочитать данные Voman-VR.");
+    throw new Error("Не удалось прочитать данные Woman-VR.");
   }
 };
 
 const postWomanVrDataModel = (data) => {
   try {
-    writeFileSync(filePath, data);
+    writeFileSync(filePath, JSON.stringify(data, null, 2)); // Преобразуем объект в JSON строку
   } catch (error) {
     console.log(error);
     throw new Error("Не удалось записать данные Woman-VR.");

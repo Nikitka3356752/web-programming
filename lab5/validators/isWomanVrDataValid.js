@@ -1,8 +1,8 @@
 const { isObjectHasProps } = require("./utils/validators");
 
 const isWomanVrDataValid = (data) => {
-  // проверяем наличие обязательных полей
-  isObjectHasProps(data, ["title", "description", "imgSrc"]);
+  // Проверка наличия обязательных полей в data
+  isObjectHasProps(data, ["altText", "buttonText", "title", "description", "imgSrc"]);
 };
 
 module.exports = isWomanVrDataValid;
