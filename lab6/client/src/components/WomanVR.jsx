@@ -1,6 +1,6 @@
 import womanVrData from '../mockData/womanVrData';
 
-const WomanVR = () => {
+const WomanVr = () => {
   return (
     <section className="woman__vr">
       <div className="woman__vr-left">
@@ -15,5 +15,5 @@ const WomanVR = () => {
   );
 };
 
-export default WomanVR;
+export default WomanVr;
 

@@ -1,8 +1,8 @@
 const { isObjectHasProps } = require("./utils/validators");
 
 const isCtaDataValid = (data) => {
-  // проверяем наличие обязательных полей
-  isObjectHasProps(data, ["title", "buttonText", "link"]);
+  // Убедитесь, что обязательные поля присутствуют, без проверки поля link
+  isObjectHasProps(data, ["linkHref", "linkText", "title", "buttonText"]);
 };
 
 module.exports = isCtaDataValid;

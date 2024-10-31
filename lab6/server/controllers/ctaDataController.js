@@ -26,7 +26,7 @@ const postCtaData = (req, res, next) => {
     // логика записи данных
     postCtaDataModel(JSON.stringify(data));
     res.status(200).json({
-      message: "Данные CTA успешно обновлены",
+      message: "Данные Cta успешно обновлены",
     });
   } catch (error) {
     res.status(400).json({

@@ -40,6 +40,7 @@ const {
 } = require("../controllers/whatIsGptDataController");
 
 router.route("/what-is-gpt").get(getWhatIsGptData).post(postWhatIsGptData);
+
 // WomanVr роутер
 const { 
   getWomanVrData, 

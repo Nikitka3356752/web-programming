@@ -18,13 +18,13 @@ app.use(cors());
 app.use(express.json());
 
 // добавляем роутер в приложение
-app.use("/api/cms", router);
+app.use("/", router);
 
 // если маршрут неверный среди всех API
 app.use("*", errorRouter);
 
 // читаем порт приложения или берем по умолчанию 5к
-const APP_PORT = process.env.APP_PORT || 5011;
+const APP_PORT = process.env.APP_PORT || 5000;
 
 // запускаем приложение
 app.listen(APP_PORT, () => {
