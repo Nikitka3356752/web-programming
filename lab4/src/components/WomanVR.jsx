@@ -9,8 +9,8 @@ const WomanVR = () => {
       <div className="woman__vr-right">
         <h2 className="cont2">{womanVrData.title}</h2>
         <p className="cont3">{womanVrData.description}</p>
-        <a href="#" className="cont4">{womanVrData.buttonText}</a>
-      </div>
+        <a href="#target-section" className="cont4">{womanVrData.buttonText}</a>
+        </div>
     </section>
   );
 };

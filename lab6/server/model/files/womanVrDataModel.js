@@ -15,7 +15,7 @@ const getWomanVrDataModel = () => {
 
 const postWomanVrDataModel = (data) => {
   try {
-    writeFileSync(filePath, JSON.stringify(data, null, 2)); // Преобразуем объект в JSON строку
+    writeFileSync(filePath, JSON.stringify(data, null, 2));
   } catch (error) {
     console.log(error);
     throw new Error("Не удалось записать данные Woman-VR.");
