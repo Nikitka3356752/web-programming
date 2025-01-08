@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 // добавляем роутер в приложение
-app.use("/", router);
+app.use("/api/cms", router);
 
 // если маршрут неверный среди всех API
 app.use("*", errorRouter);
